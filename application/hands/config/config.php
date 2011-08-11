@@ -17,7 +17,7 @@
 $pageURL = $_SERVER["SERVER_NAME"];
 
 switch ($pageURL){
-	//FOR LIVE CONNECTION hello
+	//FOR LIVE CONNECTION hello there
 	case "www.newhands.md":
 		$config['base_url'] = 'http://www.newhands.md/';
 		break;
