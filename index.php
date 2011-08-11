@@ -27,7 +27,9 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
-//this is from greg this is great
+
+//this is from greg
+//this is not
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
