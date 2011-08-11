@@ -98,7 +98,8 @@ if (defined('ENVIRONMENT'))
 			$application_folder = 'application/cms';
 			break;
 			
-		case "newhands:8585":
+		//FOR LOCAL SERVER
+		case "newhands":
 			$application_folder = 'application/hands';
 			break;
 	}

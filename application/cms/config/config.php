@@ -15,7 +15,8 @@
 |
 */
 $pageURL = $_SERVER["SERVER_NAME"];
-
+echo $pageURL;
+exit;
 switch (trim($pageURL)){
 	//FOR LIVE CONNECTION Hello ther
 	case "www.newhands.md":
@@ -35,8 +36,9 @@ switch (trim($pageURL)){
 		$config['base_url'] = 'http://cmsnewhands.twitchinteractive.com/';
 		break;
 		
-	case "newhands:8585":
-		$config['base_url'] = "http://newhands:8585";
+	//FOR LOCAL SERVER	
+	case "newhands":
+		$config['base_url'] = "http://newhands:8585/";
 		break;
 }
 //ORIGANAL BASE CODE

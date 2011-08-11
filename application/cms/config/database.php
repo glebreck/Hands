@@ -39,13 +39,13 @@
 */
 $pageURL = $_SERVER["SERVER_NAME"];
 
-if (trim($pageURL) == "newhands:8585") {
+if (trim($pageURL) == "newhands") {
 	$active_group = 'default';
 	$active_record = TRUE;
 	
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'root';
-	$db['default']['password'] = 'root';
+	$db['default']['password'] = 'root1';
 	$db['default']['database'] = 'newhands';
 	$db['default']['dbdriver'] = 'mysql';
 	$db['default']['dbprefix'] = '';
