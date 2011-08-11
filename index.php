@@ -28,8 +28,7 @@
  * By default development will show errors but testing and live will hide them.
  */
 
-//this is from greg
-//this is not
+
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
@@ -76,7 +75,7 @@ if (defined('ENVIRONMENT'))
  */
 	$pageURL = $_SERVER["SERVER_NAME"];
 	
-	switch ($pageURL){
+	switch (trim($pageURL)){
 		//FOR LIVE CONNECTION
 		case "www.newhands.md":
 			$application_folder = 'application/hands';
@@ -97,6 +96,10 @@ if (defined('ENVIRONMENT'))
 			
 		case "cmsnewhands.twitchinteractive.com":
 			$application_folder = 'application/cms';
+			break;
+			
+		case "newhands:8585":
+			$application_folder = 'application/hands';
 			break;
 	}
 	
